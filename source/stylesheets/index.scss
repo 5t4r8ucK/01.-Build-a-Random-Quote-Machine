@@ -40,3 +40,19 @@ $gap-width: 1.25rem; /* 20 px */
 $column-width: 7.375rem; /* 118 px */
 $fluid-padding: clamp(#{$gap-width}, 5%, calc(#{$column-width} + (#{$gap-width} / 2)));
 
+/*=====================*/
+/* BROWSER RESET       */
+/*=====================*/
+/* Universal Reset */
+*,
+*::before,
+*::after {
+  /* Positioning */
+  /* Display and Box Model */
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Typography */
+  /* Other */
+}
