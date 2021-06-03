@@ -57,6 +57,15 @@ $fluid-padding: clamp(#{$gap-width}, 5%, calc(#{$column-width} + (#{$gap-width} 
   /* Other */
 }
 
+/* Links*/
+a, ins {
+  /* Positioning */
+  /* Display and Box Model */
+  /* Typography */
+  text-decoration: none;
+  /* Other */
+}
+
 /* Block Quotes */
 blockquote {
   /* Positioning */
