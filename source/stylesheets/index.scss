@@ -83,3 +83,34 @@ blockquote {
     hanging-punctuation: first;
   }
 }
+
+/* HTML */
+html {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  word-break: break-word;
+  /* Other */
+  scroll-behavior: smooth;
+
+  /* System theme color changes */
+  @media (prefers-color-scheme: no-preference) {
+    body {
+      background: $white-100;
+      color: $black-100;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    body {
+      background: $white-100;
+      color: $black-100;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: $black-100;
+      color: $white-100;
+    }
+  }
+}
+
