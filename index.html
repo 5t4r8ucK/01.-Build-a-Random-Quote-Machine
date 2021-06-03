@@ -18,26 +18,44 @@
   </head>
 
   <body>
-    <main>
-      <figure id="quote-box">
-        <blockquote id="quote-text">
-          <!-- Displays Quoted Text -->
-        </blockquote>
-        <figcaption id="author">
-          <!-- Displays The Author of the Quote -->
-        </figcaption>
+
+    <main id="main-wrapper">
+
+      <div id="quote-box">
+
+        <figure>
+
+          <blockquote id="quote-text" class="no-widows">
+            <!-- Displays Quoted Text -->
+            Gravitation can not be held responsible for people falling in love.
+          </blockquote>
+
+          <figcaption id="author">
+            <!-- Displays The Author of the Quote -->
+            &mdash; Albert Einstein
+          </figcaption>
+
+        </figure>
+
         <div class="buttons">
-          <a id="tweet-quote">
-            <!-- Posts the Quote on Twitter -->
-          </a>
-          <a id="tumblr-quote">
-            <!-- Posts the Quote on Tumblr -->
-          </a>
-          <button id="new-quote">
+          <div class="social">
+            <a id="tweet-quote" class="button">
+              <!-- Posts the Quote on Twitter -->
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a id="tumblr-quote" class="button">
+              <!-- Posts the Quote on Tumblr -->
+              <i class="fab fa-tumblr"></i>
+            </a>
+          </div>
+          <button id="new-quote" class="button">
             <!-- Gets a new Quote -->
+            New Quote
           </button>
         </div>
-      </figure>
+
+      </div>
+
     </main>
   </body>
 
