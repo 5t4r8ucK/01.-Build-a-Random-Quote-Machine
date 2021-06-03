@@ -8,3 +8,10 @@ function docReady(fn) {
   }
 }
 
+docReady(function() {
+  const noWidows = () => {
+    const blockquote = document.getElementById("quote-text");
+    blockquote.innerHTML = blockquote.innerHTML.replace(/\s([^\s<]{0,10})\s*$/,'&nbsp;$1');
+  }
+  noWidows();
+});
