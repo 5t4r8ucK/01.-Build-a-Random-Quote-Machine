@@ -123,3 +123,57 @@ html {
   }
 }
 
+/*=====================*/
+/* TYPOGRAPHY          */
+/*=====================*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+/* Font-Families */
+$font-family-sans-serif: "Lato", Arial, sans-serif;
+
+/* Fluid Typography */
+html {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  font-size: 100%;
+  font-size: clamp(#{$min-font-size}, #{$preferred-font-size}, #{$max-font-size});
+  /* Other */
+
+  body {
+    /* Positioning */
+    /* Display and Box model */
+    /* Typography */
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    /* Other */
+
+    blockquote {
+      /* Positioning */
+      /* Display and Box model */
+      margin: 3rem 0 1.38rem;
+      /* Typography */
+      font-family: $font-family-sans-serif;
+      font-size:
+        clamp(
+          calc(#{$minor-third} * #{$minor-third} * #{$minor-third} * #{$minor-third} * #{$minor-third} * 1rem),
+          calc(#{strip-unit($perfect-fourth * $perfect-fourth * $perfect-fourth * $perfect-fourth * $perfect-fourth)} * #{strip-unit(1rem)} / #{strip-unit(100vw)} * 100  * 1vw),
+          calc(#{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * 1rem)
+        );
+        font-weight: 400;
+        line-height: 1.3;
+        /* Other */
+    }
+
+    figcaption {
+      /* Positioning */
+      /* Display and Box model */
+      margin-bottom: 1rem;
+      /* Typography */
+      /* Other */
+    }
+  }
+}
+
