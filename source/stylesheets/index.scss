@@ -56,3 +56,30 @@ $fluid-padding: clamp(#{$gap-width}, 5%, calc(#{$column-width} + (#{$gap-width} 
   /* Typography */
   /* Other */
 }
+
+/* Block Quotes */
+blockquote {
+  /* Positioning */
+  /* Display and Box Model */
+  /* Typography */
+  quotes: "“" "”" "‘" "’";
+  text-indent: -0.45em;
+  /* Other */
+
+  &::after {
+    content: close-quote;
+    display: inline-block;
+    padding-left: 0.65em;
+    position: absolute;
+  }
+
+  &::before {
+    content: open-quote;
+  }
+}
+@supports ( hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
