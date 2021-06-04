@@ -1,0 +1,98 @@
+@import 'variables.scss';
+@import 'typography.scss';
+
+#quote-box {
+  // Positioning
+  // Display and Box model
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 calc(#{$gap-width} * 2);
+  width: 50rem;
+  // Typography
+  // Other
+}
+
+#author {
+  // Positioning
+  // Display and Box model
+  display: flex;
+  justify-content: flex-end;
+  // Typography
+  // Other
+}
+
+.buttons {
+  // Positioning
+  // Display and Box model
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 2rem;
+  // Typography
+  // Other
+
+  .social {
+    // Positioning
+    // Display and Box model
+    display: flex;
+    flex-direction: row;
+    // Typography
+    // Other
+  }
+
+  .button {
+    // Positioning
+    // Display and Box model
+    align-items: center;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    justify-content: center;
+    // Typography
+    // Other
+
+    // System theme color changes
+    @media (prefers-color-scheme: no-preference) {
+      background: $white-100;
+      color: $black-100;
+    }
+    @media (prefers-color-scheme: light) {
+      background: $black-100;
+      color: $white-100;
+    }
+    @media (prefers-color-scheme: dark) {
+      background: $white-100;
+      color: $black-100;
+    }
+
+    &:hover {
+      // Positioning
+      // Display and Box model
+      // Typography
+      // Other
+      cursor: pointer;
+    }
+
+    &#tweet-quote,
+    &#tumblr-quote {
+      // Positioning
+      // Display and Box model
+      margin-right: 1rem;
+      padding: 0.25rem;
+      width: 2rem;
+      // Typography
+      // Other
+    }
+
+    &#new-quote {
+      // Positioning
+      // Display and Box model
+      padding: 0.25rem 1rem;
+      // Typography
+      font-family: $font-family-sans-serif;
+      // Other
+    }
+  }
+}

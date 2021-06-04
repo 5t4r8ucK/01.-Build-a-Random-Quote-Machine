@@ -1,0 +1,81 @@
+// Universal Reset
+*,
+*::before,
+*::after {
+  // Positioning
+  // Display and Box Model
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // Typography
+  // Other
+}
+
+// Links
+a, ins {
+  // Positioning
+  // Display and Box Model
+  // Typography
+  text-decoration: none;
+  // Other
+}
+
+// Block Quotes
+blockquote {
+  // Positioning
+  // Display and Box Model
+  // Typography
+  quotes: "“" "”" "‘" "’";
+  text-indent: -0.30em;
+  // Other
+
+  &::after {
+    content: close-quote;
+    display: inline-block;
+    padding-left: 0.45em;
+    position: absolute;
+  }
+
+  &::before {
+    content: open-quote;
+    display: inline-block;
+    padding-right:  0.20em;
+  }
+}
+@supports ( hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+// HTML
+html {
+  // Positioning
+  // Display and Box model
+  // Typography
+  word-break: break-word;
+  // Other
+  scroll-behavior: smooth;
+
+  // System theme color changes
+  @media (prefers-color-scheme: no-preference) {
+    body {
+      background: $white-100;
+      color: $black-100;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    body {
+      background: $white-100;
+      color: $black-100;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: $black-100;
+      color: $white-100;
+    }
+  }
+}

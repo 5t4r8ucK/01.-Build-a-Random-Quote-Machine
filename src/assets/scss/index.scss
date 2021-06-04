@@ -1,0 +1,16 @@
+@import 'functions.scss';
+@import 'variables.scss';
+@import 'browser-reset.scss';
+@import 'typography.scss';
+
+#main-wrapper {
+  // Positioning
+  // Display and Box model
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: center;
+  padding: $fluid-padding;
+  // Typography
+  // Other
+}
