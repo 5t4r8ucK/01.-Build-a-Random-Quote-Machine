@@ -11,6 +11,7 @@ class App extends React.Component {
       tag: ""
     };
     this.getRandomQuote = this.getRandomQuote.bind(this);
+    this.noWidows = this.noWidows.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -28,6 +29,7 @@ class App extends React.Component {
         quotes: [...response.quotes]
       });
       this.getRandomQuote();
+      this.noWidows();
     })
     .catch(err => { console.log(err);
     });
@@ -40,6 +42,11 @@ class App extends React.Component {
       author: randomQuote.author,
       tag: randomQuote.tag
     })
+  }
+
+  noWidows = () => {
+    const blockquote = document.getElementById("quote-text");
+    blockquote.innerHTML = blockquote.innerHTML.replace(/\s([^\s<]{0,10})\s*$/,'&nbsp;$1');
   }
 
   handleClick = () => {
