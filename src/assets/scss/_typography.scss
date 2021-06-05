@@ -47,9 +47,9 @@ html {
       font-family: $font-family-sans-serif;
       font-size:
         clamp(
-          calc(#{$minor-third} * #{$minor-third} * #{$minor-third} * #{$minor-third} * #{$minor-third} * 1rem),
-          calc(#{strip-unit($perfect-fourth * $perfect-fourth * $perfect-fourth * $perfect-fourth * $perfect-fourth)} * #{strip-unit(1rem)} / #{strip-unit(100vw)} * 100  * 1vw),
-          calc(#{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * 1rem)
+          calc(#{$minor-third} * #{$minor-third} * #{$minor-third} * 1rem),
+          calc(#{strip-unit($perfect-fourth * $perfect-fourth * $perfect-fourth)} * #{strip-unit(1rem)} / #{strip-unit(100vw)} * 100  * 1vw),
+          calc(#{$golden-ratio} * #{$golden-ratio} * #{$golden-ratio} * 1rem)
         );
         font-weight: 400;
         line-height: 1.3;
