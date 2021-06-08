@@ -3,20 +3,21 @@
 
 #quote-bg {
   // Positioning
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
   // Display and Box model
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: center;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  overflow: hidden;
+  height: auto;
   width: 100vw;
   // Typography
   // Other
-  // filter: $grayscale;
 
   &.tag-general {
     // Positioning

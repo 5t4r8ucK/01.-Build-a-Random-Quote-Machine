@@ -54,45 +54,48 @@ class App extends React.Component {
     const tumblrQuote = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=";
     return (
       <React.Fragment>
-        <div id="quote-bg" className={tagClass}></div>
-        <div id="quote-box">
-          <figure>
-            <blockquote id="text" className={"no-widows " + tagClass}>
-              {currentText.replace(noWidowsRegex, '\u00A0$1')}
-            </blockquote>
-            <figcaption id="author" className={tagClass}>
-              &mdash; {currentAuthor}
-            </figcaption>
-          </figure>
-          <div className="buttons">
-            <div className="social">
-              <a
-                id="tweet-quote"
+        <div id="quote-bg" className={tagClass}>
+          <div id="quote-box">
+            <figure>
+              <blockquote id="text" className={"no-widows " + tagClass}>
+                {currentText.replace(noWidowsRegex, '\u00A0$1')}
+              </blockquote>
+              <figcaption id="author" className={tagClass}>
+                &mdash; {currentAuthor}
+              </figcaption>
+            </figure>
+            <div className="buttons">
+              <div className="social">
+                <a
+                  id="tweet-quote"
+                  className="button"
+                  title="Tweet this quote!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={twitterQuote + encodeURIComponent("“" + currentText + "” —" +currentAuthor)}
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a
+                  id="tumblr-quote"
+                  className="button"
+                  title="Post this quote on tumblr!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={tumblrQuote + encodeURIComponent(currentAuthor) + "&content=" + encodeURIComponent(currentText) + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"}
+                >
+                  <i className="fab fa-tumblr"></i>
+                </a>
+                <div id="like_button_container"></div>
+              </div>
+              <button
+                id="new-quote"
                 className="button"
-                title="Tweet this quote!"
-                target="_blank"
-                href={twitterQuote + encodeURIComponent(currentText + "—" +currentAuthor)}
+                onClick={this.getRandomQuote}
               >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                id="tumblr-quote"
-                className="button"
-                title="Post this quote on tumblr!"
-                target="_blank"
-                href={tumblrQuote + encodeURIComponent(currentAuthor) + "&content=" + encodeURIComponent(currentText) + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"}
-              >
-                <i className="fab fa-tumblr"></i>
-              </a>
-              <div id="like_button_container"></div>
+                New Quote
+              </button>
             </div>
-            <button
-              id="new-quote"
-              className="button"
-              onClick={this.getRandomQuote}
-            >
-              New Quote
-            </button>
           </div>
         </div>
       </React.Fragment>
