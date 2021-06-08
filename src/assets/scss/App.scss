@@ -176,12 +176,13 @@
   max-width: 60vw;
   width: 60vw;
   // Typography
+  color: $white-100;
   // Other
 
   figure {
     // Positioning
     // Display and Box model
-    background-color: $black-50;
+    background-color: $black-70;
     border-radius: 0.25rem;
     padding: $fluid-padding;
     // Typography
@@ -446,28 +447,15 @@
       // Positioning
       // Display and Box model
       align-items: center;
-      background-color: $black-50;
+      background-color: $black-70;
       border-radius: 0.25rem;
       display: flex;
       flex-direction: column;
       height: 2rem;
       justify-content: center;
       // Typography
+      color: $white-100;
       // Other
-
-      // System theme color changes
-      @media (prefers-color-scheme: no-preference) {
-
-        color: $white-100;
-      }
-      @media (prefers-color-scheme: light) {
-
-        color: $black-100;
-      }
-      @media (prefers-color-scheme: dark) {
-
-        color: $white-100;
-      }
 
       &:hover {
         // Positioning
