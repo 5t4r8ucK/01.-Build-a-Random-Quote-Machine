@@ -48,16 +48,20 @@ class App extends React.Component {
   render () {
     const tagClass = "tag-" + this.state.randomQuote.tag;
     const noWidowsRegex = /\s([^\s<]{0,10})\s*$/;
+    const currentText = this.state.randomQuote.text;
+    const currentAuthor = this.state.randomQuote.author;
+    const twitterQuote = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=";
+    const tumblrQuote = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=";
     return (
       <React.Fragment>
         <div id="quote-bg" className={tagClass}></div>
-      <div id="quote-box">
+        <div id="quote-box">
           <figure>
             <blockquote id="quote-text" className={"no-widows " + tagClass}>
-              {this.state.randomQuote.text.replace(noWidowsRegex, '\u00A0$1')}
+              {currentText.replace(noWidowsRegex, '\u00A0$1')}
             </blockquote>
             <figcaption id="author" className={tagClass}>
-              &mdash; {this.state.randomQuote.author}
+              &mdash; {currentAuthor}
             </figcaption>
           </figure>
           <div className="buttons">
@@ -65,14 +69,18 @@ class App extends React.Component {
               <a
                 id="tweet-quote"
                 className="button"
-                href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="
+                title="Tweet this quote!"
+                target="_blank"
+                href={twitterQuote + encodeURIComponent(currentText + "—" +currentAuthor)}
               >
                 <i className="fab fa-twitter"></i>
               </a>
               <a
                 id="tumblr-quote"
                 className="button"
-                href="https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption="
+                title="Post this quote on tumblr!"
+                target="_blank"
+                href={tumblrQuote + encodeURIComponent(currentAuthor) + "&content=" + encodeURIComponent(currentText) + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"}
               >
                 <i className="fab fa-tumblr"></i>
               </a>
