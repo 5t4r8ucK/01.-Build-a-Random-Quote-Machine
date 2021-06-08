@@ -57,7 +57,7 @@ class App extends React.Component {
         <div id="quote-bg" className={tagClass}></div>
         <div id="quote-box">
           <figure>
-            <blockquote id="quote-text" className={"no-widows " + tagClass}>
+            <blockquote id="text" className={"no-widows " + tagClass}>
               {currentText.replace(noWidowsRegex, '\u00A0$1')}
             </blockquote>
             <figcaption id="author" className={tagClass}>
