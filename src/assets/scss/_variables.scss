@@ -1,5 +1,10 @@
 // Colors
+$black-0: rgba(0 ,0 ,0, 0);
+$black-20: rgb(0, 0, 0, 0.2);
+$black-50: rgb(0, 0, 0, 0.5);
 $black-100: rgba(0 ,0 ,0, 1);
+$white-0: rgba(255, 255, 255, 0);
+$white-50: rgba(255, 255, 255, 0.5);
 $white-100: rgba(255, 255, 255, 1);
 
 // Font sizes
@@ -23,3 +28,7 @@ $four-k-devices: 240rem; // 3840 x 2160 (4k)
 $gap-width: 1.25rem; // 20 px
 $column-width: 7.375rem; // 118 px
 $fluid-padding: clamp(#{$gap-width}, 5%, calc(#{$column-width} + (#{$gap-width} / 2)));
+
+/* Filters */
+$grayscale: grayscale(100%);
+$dark-top-gradient: linear-gradient(to bottom, $black-100, $black-20);

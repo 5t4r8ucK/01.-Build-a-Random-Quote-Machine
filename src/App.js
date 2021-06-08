@@ -49,6 +49,8 @@ class App extends React.Component {
     const tagClass = "tag-" + this.state.randomQuote.tag;
     const noWidowsRegex = /\s([^\s<]{0,10})\s*$/;
     return (
+      <React.Fragment>
+        <div id="quote-bg" className={tagClass}></div>
       <div id="quote-box">
           <figure>
             <blockquote id="quote-text" className={"no-widows " + tagClass}>
@@ -85,6 +87,7 @@ class App extends React.Component {
             </button>
           </div>
         </div>
+      </React.Fragment>
     );
   }
 }

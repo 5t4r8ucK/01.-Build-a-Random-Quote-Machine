@@ -6,11 +6,11 @@
 #main-wrapper {
   // Positioning
   // Display and Box model
+  align-items: center;
   display: flex;
   flex-direction: row;
   min-height: 100vh;
   justify-content: center;
-  padding: $fluid-padding;
   // Typography
   // Other
 }
