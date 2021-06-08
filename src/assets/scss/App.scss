@@ -189,6 +189,11 @@
   }
 
   #quote-text {
+    // Positioning
+    // Display and Box model
+    margin-top: 0;
+    // Typography
+    // Other
 
     &.tag-general {
       font-family: "Raleway", sans-serif;
@@ -305,6 +310,7 @@
     // Display and Box model
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0;
     // Typography
     // Other
 
