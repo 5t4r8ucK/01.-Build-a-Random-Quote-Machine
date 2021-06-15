@@ -12,51 +12,51 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 
 ### User Story #1
 
-I can see a wrapper element with a corresponding ´id="quote-box"´.
+I can see a wrapper element with a corresponding `id="quote-box"`.
 
 ### User Story #2
 
-Within ´#quote-box´, I can see an element with a corresponding ´id="text"´.
+Within `#quote-box`, I can see an element with a corresponding `id="text"`.
 
 ### User Story #3
 
-Within ´#quote-box´, I can see an element with a corresponding ´id="author"´.
+Within `#quote-box`, I can see an element with a corresponding `id="author"`.
 
 ### User Story #4
 
-Within ´#quote-box´, I can see a clickable element with a corresponding ´id="new-quote"´.
+Within `#quote-box`, I can see a clickable element with a corresponding `id="new-quote"`.
 
 ### User Story #5
 
-Within ´#quote-box´, I can see a clickable ´a´ element with a corresponding ´id="tweet-quote"´.
+Within `#quote-box`, I can see a clickable `a` element with a corresponding `id="tweet-quote"`.
 
 ### User Story #6
 
-On first load, my quote machine displays a random quote in the element with ´id="text"´.
+On first load, my quote machine displays a random quote in the element with `id="text"`.
 
 ### User Story #7
 
-On first load, my quote machine displays the random quote's author in the element with ´id="author"´.
+On first load, my quote machine displays the random quote's author in the element with `id="author"`.
 
 ### User Story #8
 
-When the ´#new-quote´ button is clicked, my quote machine should fetch a new quote and display it in the ´#text´ element.
+When the `#new-quote` button is clicked, my quote machine should fetch a new quote and display it in the `#text` element.
 
 ### User Story #9
 
-My quote machine should fetch the new quote's author when the ´#new-quote´ button is clicked and display it in the ´#author´ element.
+My quote machine should fetch the new quote's author when the `#new-quote` button is clicked and display it in the `#author` element.
 
 ### User Story #10
 
-I can tweet the current quote by clicking on the ´#tweet-quote´ ´a´ element. This a element should include the ´"twitter.com/intent/tweet"´ path in its ´href´ attribute to tweet the current quote.
+I can tweet the current quote by clicking on the `#tweet-quote` `a` element. This a element should include the `"twitter.com/intent/tweet"` path in its `href` attribute to tweet the current quote.
 
 ### User Story #11
 
-The ´#quote-box´ wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
+The `#quote-box` wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
 ## Instructions
 
-You can build your project by [using this CodePen template](https://codepen.io/pen?template=MJjpwO) and clicking ´Save´ to create your own pen. Or you can use this CDN link to run the tests in any environment you like: `https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`
+You can build your project by [using this CodePen template](https://codepen.io/pen?template=MJjpwO) and clicking `Save` to create your own pen. Or you can use this CDN link to run the tests in any environment you like: `https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`
 
 Once you're done, submit the URL to your working project with all its tests passing.
 
