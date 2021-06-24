@@ -1,6 +1,6 @@
 {
   "short_name": "Random Quote Machine",
-  "name": "Displays a Random Quote using React",
+  "name": "A Quote Machine Which Displays Randomly Generated Quotes Built With React",
   "icons": [
     {
       "src": "/favicons/favicon.ico",
